@@ -109,7 +109,7 @@ public class RadioBoxQuestion extends AppCompatActivity {
                     } else {
 
                     }
-                    updateQuestion();
+                    
                     ;
                 }
             }
