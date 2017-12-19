@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Games Quiz</string>
+    <string name="score">score</string>
+    <string name="help">help</string>
+    <string name="next">next</string>
+    <string name="reset">reset</string>
+
+    <string name="description_picture_question_1">Description Picture Question 1</string>
+    <string name="question_no_1">Question No. 8</string>
+    <string name="text_of_question_no_1">Text of question No.1:</string>
+    <string name="option_no1_1">option_No1_1</string>
+    <string name="option_no1_2">option_No1_2</string>
+    <string name="option_no1_3">option_No1_3</string>
+    <string name="option_no1_4">option_No1_4</string>
+    <string name="web_help_no1">https://en.wikipedia.org/wiki/Wolfenstein_3D</string>
+
+
+    <string name="text_of_question_no_1_box">Blizzard Entertainment, Inc. is an American video game. Former names of Blizzard Entertainment Inc. are:</string>
+    <string name="option_no1_1_box">Storm Entertainment Inc.</string>
+    <string name="option_no1_2_box">Chaos Studios</string>
+    <string name="option_no1_3_box">Silicon &amp; Chaos Studios</string>
+    <string name="option_no1_4_box">Silicon &amp; Synapce</string>
+    <string name="web_help_no1_Box">https://en.wikipedia.org/wiki/Blizzard_Entertainment</string>
+
+    <string name="question_no_2">Question No. 9:</string>
+    <string name="text_of_question_no_2">Eidos Montréal is a Canadian video game development studio owned by Square Enix Europe created games:</string>
+    <string name="option_no2_1_box">Age of Conan: Unchained</string>
+    <string name="option_no2_2_box">Commandos Strike Force</string>
+    <string name="option_no2_3_box">Chicken Run</string>
+    <string name="option_no2_4_box">Age of Adventure</string>
+    <string name="web_help_no2_Box">https://en.wikipedia.org/wiki/Eidos_Montreal</string>
+
+    <string name="question_no_3">Question No. 10:</string>
+    <string name="text_of_question_no_3">2K Czech a.s.  was a game development company located in Brno, Czech Republic. is widely known for the Mafia series. Former names of 2k Czech a.s. are:</string>
+    <string name="option_no3_1_box">Illusion Softworks</string>
+    <string name="option_no3_2_box">Illusion Games</string>
+    <string name="option_no3_3_box">Silver Wish Games</string>
+    <string name="option_no3_4_box">Golden Wish Games</string>
+    <string name="web_help_no3_Box">https://en.wikipedia.org/wiki/2K_Czech</string>
+    <string name="enter_your_name">Enter your name</string>
+
+
+    <string name="result4">Old games for operating system MS DOS is something that you are not interested in match.</string>
+    <string name="result3">You know some iconic old games for MS DOS but few of them are unknown to you. You are probably too young or you did not take them very seriously.</string>
+    <string name="result2">You have pretty good overview about the games from MS DOS era.It looks like that MS DOS is your cup of coffee.</string>
+    <string name="result1">Congratulation! You know games from MS DOS era like the back of your hand.</string>
+    <string name="into">Welcome to my third Google Challenge Scholarship: Android Basics application. </string>
+    <string name="into1">Are you ready to prove your knowledge of MS DOS Games?. </string>
+    <string name="ms_dos_game_quiz">MS DOS Game quiz</string>
+</resources>
