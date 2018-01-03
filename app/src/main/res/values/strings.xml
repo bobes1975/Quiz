@@ -4,6 +4,8 @@
     <string name="help">help</string>
     <string name="next">next</string>
     <string name="reset">reset</string>
+    <string name="start">Start</string>
+    <string name="pokus">pokus</string>
 
     <string name="description_picture_question_1">Description Picture Question 1</string>
     <string name="question_no_1">Question No. 8</string>
@@ -31,7 +33,7 @@
     <string name="web_help_no2_Box">https://en.wikipedia.org/wiki/Eidos_Montreal</string>
 
     <string name="question_no_3">Question No. 10:</string>
-    <string name="text_of_question_no_3">2K Czech a.s.  was a game development company located in Brno, Czech Republic. is widely known for the Mafia series. Former names of 2k Czech a.s. are:</string>
+    <string name="text_of_question_no_3">2K Czech a.s. is widely known for the Mafia series. Former names of 2k Czech a.s. are:</string>
     <string name="option_no3_1_box">Illusion Softworks</string>
     <string name="option_no3_2_box">Illusion Games</string>
     <string name="option_no3_3_box">Silver Wish Games</string>
@@ -47,4 +49,6 @@
     <string name="into">Welcome to my third Google Challenge Scholarship: Android Basics application. </string>
     <string name="into1">Are you ready to prove your knowledge of MS DOS Games?. </string>
     <string name="ms_dos_game_quiz">MS DOS Game quiz</string>
+
+
 </resources>
