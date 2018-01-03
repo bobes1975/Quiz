@@ -38,13 +38,13 @@ public class CheckBoxQuestion1 extends AppCompatActivity {
         url = getString(R.string.web_help_no1_Box);
         Uri uriUrl = Uri.parse(url);
         Intent launchBrowser = new Intent(Intent.ACTION_VIEW, uriUrl);
-        startActivity(launchBrowser);}
-
+        startActivity(launchBrowser);
+    }
 
 
     //Check the correct answer (box No.1, 2 and 3)
 
-    public void answer1CheckBox (final int newScore) {
+    public void answer1CheckBox(final int newScore) {
         Button btnNext = (Button) findViewById(R.id.question_next);
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -66,11 +66,12 @@ public class CheckBoxQuestion1 extends AppCompatActivity {
                 }
 
 
-
                 //sent int score to 2nd CheckBox question activity
                 Intent sentScore = new Intent(CheckBoxQuestion1.this, CheckBoxQuestion2.class);
                 sentScore.putExtra("sentScoreTo", score);
                 startActivity(sentScore);
 
             }
-        });}}
+        });
+    }
+}

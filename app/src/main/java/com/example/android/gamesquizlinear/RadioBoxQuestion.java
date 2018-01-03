@@ -5,15 +5,18 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.content.Intent;
 import android.net.Uri;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 
 public class RadioBoxQuestion extends AppCompatActivity {
+
+    static final String stateQuestionNumber = "stateQuestionNumber";
+    static final String stateScore = "stateScore";
 
     ImageView gamePicture;
     private QuestionLibrary myQuestionLibrary = new QuestionLibrary();
@@ -27,7 +30,6 @@ public class RadioBoxQuestion extends AppCompatActivity {
     private String quizAnswer;
     private String urlHelpLink;
     private int questionNumber = 0;
-    private int amountOfQuestions = 7;
     private RadioGroup radioQuestionGroup;
 
 
@@ -35,16 +37,11 @@ public class RadioBoxQuestion extends AppCompatActivity {
         score = 0;
     }
 
-    //return ID for Quiz image
-    public static int getImageId(Context context, String pictureNo) {
-        return context.getResources().getIdentifier("drawable/" + pictureNo, null, context.getPackageName());
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_radio_box_question);
-
 
         quizQuestionNumberView = (TextView) findViewById(R.id.question_1);
         quizQuestionView = (TextView) findViewById(R.id.text_question_1);
@@ -54,7 +51,31 @@ public class RadioBoxQuestion extends AppCompatActivity {
         radioButtonChoice3 = (RadioButton) findViewById(R.id.option_question_1_3);
         radioButtonChoice4 = (RadioButton) findViewById(R.id.option_question_1_4);
 
+        // Check whether we're recreating a previously destroyed instance
+        if (savedInstanceState != null) {
+            // Restore value of members from saved state
+            questionNumber = savedInstanceState.getInt(stateQuestionNumber);
+            score = savedInstanceState.getInt(stateScore);
+        }
+
+        question();
         updateQuestion();
+    }
+
+    //Save question number and score during display rotation
+    @Override
+    protected void onSaveInstanceState(Bundle savedInstanceState) {
+        // Save the question number
+        questionNumber = questionNumber - 1;
+        savedInstanceState.putInt(stateQuestionNumber, questionNumber);
+        savedInstanceState.putInt(stateScore, score);
+
+        // Always call the superclass so it can save the view hierarchy state
+        super.onSaveInstanceState(savedInstanceState);
+    }
+
+    //update question for radio buttons part of quiz
+    public void question() {
 
         // find correct answer
         radioQuestionGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
@@ -70,11 +91,7 @@ public class RadioBoxQuestion extends AppCompatActivity {
                     if (choice == quizAnswer) {
 
                         score = score + 1;
-
-                    } else {
-
                     }
-                    ;
 
                 } else if (checkedId == R.id.option_question_1_2) {
 
@@ -82,11 +99,7 @@ public class RadioBoxQuestion extends AppCompatActivity {
                     if (choice == quizAnswer) {
 
                         score = score + 1;
-
-                    } else {
-
                     }
-                    ;
 
                 } else if (checkedId == R.id.option_question_1_3) {
 
@@ -94,10 +107,7 @@ public class RadioBoxQuestion extends AppCompatActivity {
                     if (choice == quizAnswer) {
 
                         score = score + 1;
-
-                    } else {
                     }
-                    ;
 
                 } else if (checkedId == R.id.option_question_1_4) {
 
@@ -105,18 +115,15 @@ public class RadioBoxQuestion extends AppCompatActivity {
                     if (choice == quizAnswer) {
 
                         score = score + 1;
-
-                    } else {
-
                     }
-                    
-                    ;
                 }
             }
         });
     }
 
+
     //update question texts, choices and web link for help button
+
     public void updateQuestion() {
         gamePicture = (ImageView) findViewById(R.id.quizImage1);
 
@@ -135,7 +142,7 @@ public class RadioBoxQuestion extends AppCompatActivity {
         int id = c.getResources().getIdentifier("drawable/" + pictureNo, null, c.getPackageName());
         ((ImageView) findViewById(R.id.quizImage1)).setImageResource(id);
 
-
+        //update question number
         questionNumber++;
     }
 
@@ -153,16 +160,16 @@ public class RadioBoxQuestion extends AppCompatActivity {
 
     //next button
     public void next(View view) {
+        int amountOfQuestions = 7;
         if (amountOfQuestions == questionNumber) {
 
             evaluation();
         } else {
-
             updateQuestion();
         }
     }
 
-    //after finishing quis call evaluation
+    //after finishing quiz call evaluation
     public void evaluation() {
 
 //sent int score to 2nd CheckBox question activity

@@ -58,12 +58,9 @@ public class evaluation extends AppCompatActivity {
             ImageView trophyPicture = (ImageView) findViewById(R.id.result);
             trophyPicture.setImageResource(R.drawable.place4);
         }
-    }
-
-    ;
-
-
+    } ;
     //onClick restart button
+
     public void reset(View v) {
         Intent intentReset = new Intent(this, MainActivity.class);
         startActivity(intentReset);
