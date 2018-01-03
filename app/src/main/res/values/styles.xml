@@ -10,20 +10,29 @@
 
     <!-- dimentions for margin and padding -->
     <dimen name="activity_horizontal_margin">32dp</dimen>
-    <dimen name="activity_vertical_margin">10dp</dimen>
-    <dimen name="cup_trophy">40dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="cup_trophy">45dp</dimen>
     <dimen name="radio_landscape">37dp</dimen>
 
     <!-- Style for RadioButton. -->
     <style name="RadioButton">
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_weight">1</item>
-        <item name="android:textStyle">bold</item>
         <item name="android:textSize">14sp</item>
         <item name="android:gravity">center</item>
         <item name="android:paddingTop">5dp</item>
+        <item name="android:layout_margin">8dp</item>
         <item name="android:text">@color/colorPrimaryText</item>
         <item name="android:fontFamily">"monospace"t</item>
+    </style>
+
+    <!-- Style for CheckBox. -->
+    <style name="CheckBox">
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">4</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:layout_width">match_parent</item>
+
     </style>
 
     <!-- Style for evaluation text. -->
@@ -47,7 +56,7 @@
 
     <!-- Style for Question text. -->
     <style name="question_text">
-        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:fontFamily">monospace</item>
         <item name="android:textSize">14sp</item>
@@ -55,7 +64,7 @@
         <item name="android:textColor">@color/colorPrimaryText</item>
     </style>
 
-    <!-- Style for Into. -->
+    <!-- Style for Intro. -->
     <style name="intro">
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">match_parent</item>
