@@ -59,8 +59,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/layout_question_1"
-            android:layout_marginEnd="@dimen/activity_vertical_margin"
-            android:layout_marginStart="@dimen/activity_vertical_margin"
+            android:layout_margin="@dimen/activity_vertical_margin"
             android:orientation="vertical">
 
 
@@ -83,7 +82,7 @@
             <RadioButton
                 android:id="@+id/option_question_1_4"
                 style="@style/RadioButton"
-                android:gravity="center_vertical"
+                android:layout_marginStart="8dp"
                 android:text="@string/option_no1_4" />
 
         </RadioGroup>
@@ -101,7 +100,7 @@
             android:id="@+id/question_next"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
+            android:layout_below="@id/radio_group_question_1"
             android:layout_alignParentEnd="true"
             android:layout_margin="@dimen/activity_vertical_margin"
             android:onClick="next"
