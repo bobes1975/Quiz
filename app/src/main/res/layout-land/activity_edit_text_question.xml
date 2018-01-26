@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_new"
+        tools:context="com.example.android.gamesquizlinear.editTextQuestion">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/layout_question_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="16dp">
+
+                <ImageView
+
+                    android:id="@+id/quizImage2"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_vertical_margin"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/q11_picture" />
+
+                <LinearLayout
+                    android:id="@+id/layout_question_11"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/question_3_Box"
+                        style="@style/question_text"
+                        android:layout_marginStart="@dimen/activity_vertical_margin"
+                        android:layout_marginTop="@dimen/activity_vertical_margin"
+                        android:layout_weight="1"
+                        android:text="@string/question_no_11" />
+
+                    <TextView
+                        android:id="@+id/text_question_3Box"
+                        style="@style/question_text"
+                        android:layout_weight="5"
+                        android:padding="@dimen/activity_vertical_margin"
+                        android:text="@string/text_of_question_no_11_ET" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editTextAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:layout_below="@+id/layout_question_2"
+                android:hint="@string/write_correct_answer"/>
+
+
+            <Button
+                android:id="@+id/help_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:onClick="help_Q3"
+                android:text="@string/help" />
+
+            <Button
+                android:id="@+id/question_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextAnswer"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:text="@string/next" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+

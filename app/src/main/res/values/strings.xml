@@ -51,4 +51,9 @@
     <string name="ms_dos_game_quiz">MS DOS Game quiz</string>
 
 
+    <string name="question_no_11">Question No. 11:</string>
+    <string name="text_of_question_no_11_ET">This game is a puzzle video game, published in 1989 by California Dreams, developed in Poland by Aleksander Ustaszewski and Mirosław Zabłocki."</string>
+    <string name="web_help_no11_ET">https://en.wikipedia.org/wiki/Blockout</string>
+    <string name="answer_no_11">blockout</string>
+    <string name="write_correct_answer">write correct answer</string>
 </resources>

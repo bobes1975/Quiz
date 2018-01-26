@@ -20,7 +20,8 @@
         <activity android:name=".CheckBoxQuestion1" />
         <activity android:name=".CheckBoxQuestion2" />
         <activity android:name=".CheckBoxQuestion3" />
-        <activity android:name=".RadioBoxQuestion"></activity>
+        <activity android:name=".RadioBoxQuestion" />
+        <activity android:name=".editTextQuestion"></activity>
     </application>
 
 </manifest>

@@ -65,11 +65,8 @@ public class CheckBoxQuestion3 extends AppCompatActivity {
 
                 String scoreMessage = "You have " + String.valueOf(score) + " correct answers";
 
-                Toast.makeText(CheckBoxQuestion3.this,
-                        scoreMessage, Toast.LENGTH_LONG).show();
-
                 //sent int score to 2nd CheckBox question activity
-                Intent sentScore = new Intent(CheckBoxQuestion3.this, evaluation.class);
+                Intent sentScore = new Intent(CheckBoxQuestion3.this, editTextQuestion.class);
                 sentScore.putExtra("sentScoreTo", score);
                 startActivity(sentScore);
 

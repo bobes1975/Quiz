@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- dimentions for margin and padding -->
+    <dimen name="activity_horizontal_margin">32dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="cup_trophy">45dp</dimen>
+    <dimen name="radio_landscape">37dp</dimen>
+
+</resources>
