@@ -62,7 +62,7 @@ public class editTextQuestion extends AppCompatActivity {
 
                 }
 
-                String scoreMessage = "You have " + String.valueOf(score) + getString(R.string.correntAnswer);
+                String scoreMessage = getString(R.string.youHave) + String.valueOf(score) + getString(R.string.correntAnswer);
 
                 Toast.makeText(editTextQuestion.this,
                         scoreMessage, Toast.LENGTH_LONG).show();
