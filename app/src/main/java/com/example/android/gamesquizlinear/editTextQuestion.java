@@ -21,7 +21,7 @@ public class editTextQuestion extends AppCompatActivity {
 
         Intent sentScoreA = getIntent();
 
-        final int newScore = sentScoreA.getIntExtra("sentScoreTo", 0);
+        final int newScore = sentScoreA.getIntExtra(util.SENT_SCORE, 0);
 
         answerET(newScore);
     }
@@ -62,7 +62,7 @@ public class editTextQuestion extends AppCompatActivity {
 
                 }
 
-                String scoreMessage = "You have " + String.valueOf(score) + " correct answers from 14";
+                String scoreMessage = "You have " + String.valueOf(score) + getString(R.string.correntAnswer);
 
                 Toast.makeText(editTextQuestion.this,
                         scoreMessage, Toast.LENGTH_LONG).show();

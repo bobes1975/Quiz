@@ -21,7 +21,7 @@ public class CheckBoxQuestion3 extends AppCompatActivity {
 
         Intent sentScoreA = getIntent();
 
-        final int newScore = sentScoreA.getIntExtra("sentScoreTo", 0);
+        final int newScore = sentScoreA.getIntExtra(util.SENT_SCORE, 0);
 
         answer1CheckBox(newScore);
     }
